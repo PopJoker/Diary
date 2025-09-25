@@ -77,9 +77,12 @@
 1. 在安裝畫面按 **Shift + F10** 打開命令提示字元。
 2. 輸入：
 ```bat
-diskpart list disk 
-select disk 0 
-clean convert gpt exit
+diskpart
+list disk
+select disk 0
+clean
+convert gpt
+exit
 ```
 3. 回到安裝畫面，重新分割磁碟後安裝。
 
