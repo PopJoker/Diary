@@ -71,7 +71,8 @@
 **症狀**：出現「無法安裝在這個磁碟」  
 **解決方法**：
 1. 在安裝畫面按 **Shift + F10** 打開命令提示字元。
-2. 輸入：```bat
+2. 輸入：
+```bat
 diskpart list disk 
 select disk 0 
 clean convert gpt exit
