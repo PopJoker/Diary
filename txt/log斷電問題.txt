@@ -1,0 +1,8 @@
+log斷電問題
+
+UI放 SOC RC資訊
+
+HMI to master 寫入測試
+
+功能方塊圖
+流程圖

@@ -1,0 +1,14 @@
+設定充放電Batteryconstantchargevoltage會影響Batteryweakbackvoltageinhybridmode的最高值
+{
+  ...
+  "Batterymaximumchargecurrent": 50.0,
+  "Batteryconstantchargevoltage": 59.9,
+  "Batteryfloatingchargevoltage": 58.8,
+  "Batterystopchargercurrentlevelinfloatingcharging": 20.0,
+    …
+  "Batteryundervoltage": 59.7,
+  "Batteryunderbackvoltage": 59.8,
+  "Batteryweakvoltageinhybridmode": 59.8,
+  "Batteryweakbackvoltageinhybridmode": 59.9,
+  …
+}
