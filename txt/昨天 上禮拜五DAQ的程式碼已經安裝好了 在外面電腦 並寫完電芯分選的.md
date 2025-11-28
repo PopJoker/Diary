@@ -10,7 +10,8 @@ barcode type day/mounth action power_kw
 
 	1.	LG架設WEB+舊電腦裝哪(貼紙膠帶就好) #送錯待補
 
-	2.	Web API 控SOC 充放時間 監視Alarm
+	2.1	Web API 控SOC 充放時間 #進行中 
+	2.2	Web API 監視Alarm #完成
 
 	3.	Web API pack to csv	#完成
 
@@ -20,8 +21,8 @@ barcode type day/mounth action power_kw
 
 	6.	電芯分選 內阻也可以設個最低值 
 
-	7.	Modxa多台上傳測試 #進行中
-H TOP
+	7.	Modxa多台上傳測試 #完成
+
 ==========================
 
 來穎	RTN-ESS-2502

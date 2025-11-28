@@ -33,7 +33,7 @@
 	-PCS轉DC到多少電壓來充電池 
 	-確認：改數值：
 		-晚上00:00~06:00(AC充電)
-		-白天(PV充電)無視 會充滿
+		-白天(PV充電) 會充滿
 
 -最大浮充電壓 Batteryfloatingchargevoltage
 	-充到這裡開始限電流 
@@ -43,6 +43,7 @@
 
 -電池電壓低於多少開始AC充電 ACchargerkeepbatteryvoltage
 	-會不會AC充電 
+	-白天(PV充電)無視 會充滿
 
 以上參數觀察
 -不在PCS充電時間就沒充電
