@@ -1,27 +1,17 @@
-昨天		WebAPI			會持續進行Hirack數據下載CSV檔案的APi 預計今天完成
-		MODXA			模擬八台device上傳 有用好了 再觀察一下上船情況
+昨天		15kW API			備援SOC 韌體上禮拜更新有遇到問題
 
-今天		15kW API			備援SOC的控制 今天會測試 並整理電池行為與出廠參數
+今天		15kW API			待更新完後會測試備援SOC的控制
+		Hirack HMI		整合22Cell跟21Cell的顯示畫面	讓兩種可以用同一個程式版本顯示	更新Spec
+		萊穎 HMI			
 	
 
 barcode type day/mounth action power_kw
 	
 ==========================
 
-	1.	LG架設WEB+舊電腦裝哪(貼紙膠帶就好) #送錯待補
+	1.	備援SOC	測試充放電效果
 
-	2.1	Web API 控SOC 充放時間 #進行中 
-	2.2	Web API 監視Alarm #完成
-
-	3.	Web API pack to csv	#完成
-
-	4.	DAQ(+Influx) 跟 HIOKI 方塊圖都畫一下 #完成
-
-	5.	HMI 先改版 測試為什麼卡住 #完成
-
-	6.	電芯分選 內阻也可以設個最低值 
-
-	7.	Modxa多台上傳測試 #完成
+	2.	電芯分選 內阻也可以設個最低值 
 
 ==========================
 
