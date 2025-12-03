@@ -1,8 +1,8 @@
-昨天		伊頓 HMI			有做測試 最後還是沒找到原因 但後續改成TCP去詢問所以應該是沒是
+昨天		伊頓 HMI			有做測試 最後還是沒找到原因 但後續副理通知客戶會用TCP通訊 這部分已經有測試過可以用 再看後面要怎麼提供
 		
-今天		Web API			上禮拜有寫Hirack下載Pack數據的API 這禮拜文傳不在 會先做個網頁按鈕測試看看csv檔的可讀性 讓文傳回來可以直接做進網頁
-		Hirak HMI		後面有要做平衡功能的工程頁面 今天會先鋪設頁面
-	
+今天		Web API			Hirack下載Pack數據的按鈕 今天完成測試
+		Hirak HMI		後面有要做平衡功能的工程頁面 今天會先鋪設頁面 測試工程帳號密碼
+		那個買錯的螢幕	會找時間交接給產線
 
 barcode type day/mounth action power_kw
 	
@@ -12,15 +12,16 @@ barcode type day/mounth action power_kw
 
 	2.	電芯分選 內阻也可以設個最低值 
 	
-	3.	有時間綠岩的APP先進行
+	3.	找時間整合HMI Hirack
 
+	4.	有時間綠岩的APP先進行
 ==========================
 
 來穎	RTN-ESS-2502
 
-伊頓 CT01
+伊頓 CT01 CTC-ESS-2501
 
-
+12/17~12/26	預計三天ok
 
  	充放電狀態顯示	#完成
 
