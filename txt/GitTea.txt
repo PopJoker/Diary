@@ -1,0 +1,2 @@
+git config --global user.name "maverick"
+git config --global user.email "maverick.tu@gus-tech.com.tw"
