@@ -1,6 +1,6 @@
-昨天		Hirak HMI		昨天有收到副理新版Hirack的Spec
+昨天		Hirak HMI		工程模式頁已經加入到樓下的Hirak內	現在在測試對用戶系統RTU跟TCP通訊有沒有影響 並且已經根據新的Hirack Spec 寫好畫面 						待跟新完就可以測試
 		
-今天		Hirak HMI		新增數據顯示畫面 並繼續進行工程頁的設計
+今天		Hirak HMI		會先整理一下用戶介面跟工程界面顯示的數據跟功能操作 後續會討論有沒有哪部分應該給予用戶但我做在工程面 或應該隱藏在工						程面
 
 Bonus	那個買錯的螢幕	會找時間交接給產線
 
@@ -12,7 +12,7 @@ barcode type day/mounth action power_kw
 	
 	2.	電芯分選 內阻也可以設個最低值 
 	
-	3.	找時間整合HMI Hirack
+	3.	整合HMI Hirack
 	
 	4.	有時間綠岩的APP先進行
 	

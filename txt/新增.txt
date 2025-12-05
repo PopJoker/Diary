@@ -1,5 +1,6 @@
 新增
 Rack 溫度
+
 01 06 06 01 00 01
 
 主動 0x0600	Active balance command	Unsigned integer	2	Enable: 0x0001
@@ -10,3 +11,4 @@ Pack 平衡 0x0602	Each pack passive balance
  Or high and low gauge passive balance or High and low side auto passive balance.	Unsigned integer	2	Pack enabled: 0x0001
 Pack disabled: 0x0000	Write only
 
+Cell最高溫度 最低溫度
