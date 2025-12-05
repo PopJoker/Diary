@@ -12,3 +12,5 @@ Pack 平衡 0x0602	Each pack passive balance
 Pack disabled: 0x0000	Write only
 
 Cell最高溫度 最低溫度
+
+01 02 03 45 46
