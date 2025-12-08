@@ -1,0 +1,16 @@
+分選 [手工具][有上雲][PC]
+core pack組 [掃Barcode][.csv][樹梅派]
+點焊後DAQ電壓檢測[掃Barcode][可以直接上雲 但網路爛][PC]
+BMS焊接後DCIR[掃Barcode][.csv][樹梅派]
+包裝完成[掃Barcode][.csv][PC]
+
+網路問題要反映
+
+10 12 15 18
+
+1. 數量 量測數據
+2. 數量 內Barcode
+3. 數量 DAQ Cell檢測數據
+4. 數量 內外Barcode
+5. 數量 外Barcode DCIR檢測數據
+6. 數量 外Barcode
