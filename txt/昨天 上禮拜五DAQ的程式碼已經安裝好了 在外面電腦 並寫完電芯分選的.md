@@ -1,8 +1,6 @@
-昨天		Hirack HMI	在整理新版Hirack HMI的畫面及功能，有再對平衡的畫面表現做新增讓使用者可以用圖像介面看到哪些Cell或Pack在平衡
+昨天		產線上雲		有根據產線站點的分配跟方式跟文傳有進行討論
 		
-今天		Hirack HMI	持續整理新版Hirack HMI的功能介紹文件
-
-Bonus	那個買錯的螢幕	會找時間交接給產線 #完成
+今天		產線上雲		根據昨天的格式先撰寫並測試InfluxDB存取數據的方式
 
 barcode type day/mounth action power_kw
 	

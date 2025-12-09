@@ -1,0 +1,70 @@
+電芯分選(cellsort)
+stage // 站名(固定每站都有的主KEY)
+orderId // 制令單號
+orderCode // 製造號
+corepackBarcode
+caseBarcode
+
+voltage // 電芯電壓
+voltageUpLimit // 電芯電壓上限
+voltageDnLimit // 電芯電壓下限
+Resistance // 電芯內阻
+ResistanceUpLimit // 電芯內阻上限
+ResistanceDnLimit // 電芯內阻下限
+SortResult // 分選結果
+SortPort // 分選槽位
+TimeStamp // 分選時間
+
+----
+
+corepack組裝(corepack)
+stage // 站名(固定每站都有的主KEY)
+orderId // 制令單號
+orderCode // 製造號
+corepackBarcode // corepack號
+TimeStamp // 分選時間
+
+----
+
+DAQ970 Cell量測(daq970cellmeagure)
+stage // 站名(固定每站都有的主KEY)
+corepackBarcode // corepack號
+voltagemaxthread //
+voltageminthread //
+voltagediffthread //
+tempmaxthread //
+tempminthread //
+[ch'x']['v'or't'] //
+TimeStamp // 分選時間
+
+----
+
+入殼組裝(combine)
+stage // 站名(固定每站都有的主KEY)
+corepackBarcode // corepack號
+caseBarcode // caseBarcode號
+TimeStamp // 分選時間
+
+----
+
+電測(etest)
+stage // 站名(固定每站都有的主KEY)
+caseBarcode // caseBarcode號
+
+ocvoltage // ocv電壓
+acir // 靜態內阻
+odcp // 
+v0 // 
+a02c //
+v1 // 
+a5c //
+dcir // dcir
+result // PASS/NG
+TimeStamp // 分選時間
+
+----
+
+包裝(package)
+stage // 站名(固定每站都有的主KEY)
+caseBarcode // caseBarcode號
+TimeStamp // 分選時間
