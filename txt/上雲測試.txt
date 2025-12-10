@@ -1,99 +1,118 @@
-# --- 1️⃣ cellsort ---
-curl -X POST http://192.168.1.207:3001/influx/write \
+
+# --- 0 daq970cellmeasure ---
+curl -X POST http://192.168.1.207:3000/api/upload \
      -H "Content-Type: application/json" \
      -d '{
-        "measurement": "cellsort",
-        "data": {
-            "orderId": "OD123",
-            "orderCode": "C001",
-            "corepackBarcode": "CP001",
-            "caseBarcode": "CASE001",
-            "voltage": 3.65,
-            "Resistance": 12.3,
-            "SortResult": "OK",
-            "SortPort": "P1",
-            "TimeStamp": "2025-12-09T08:00:00Z"
-        }
+        "stage": "daq970cellmeasure",
+        "corepackBarcode": "CP001",
+        "voltagemaxthread": 3.7,
+        "voltageminthread": 3.6,
+        "voltagediffthread": 0.1,
+        "tempmaxthread": 35.5,
+        "tempminthread": 30.2,
+        "ch1_v": 3.65,
+        "ch1_t": 32.1,
+        "ch2_v": 3.66,
+        "ch2_t": 32.3,
+        "TimeStamp": "2025-12-09T08:20:00Z"
      }'
 
-# --- 2️⃣ corepack ---
-curl -X POST http://192.168.1.207:3001/influx/write \
+# --- 1️⃣ cellsort ---
+curl -X POST http://192.168.1.207:3000/api/upload \
      -H "Content-Type: application/json" \
      -d '{
-        "measurement": "corepack",
-        "data": {
-            "stage": "corepack",
-            "orderId": "OD123",
-            "orderCode": "C001",
-            "corepackBarcode": "CP001",
-            "TimeStamp": "2025-12-09T08:10:00Z"
-        }
+        "stage": "cellsort",
+        "orderId": "OD123",
+        "orderCode": "C001",
+        "corepackBarcode": "CP001",
+        "caseBarcode": "CASE001",
+        "voltage": 3.65,
+        "Resistance": 12.3,
+        "SortResult": "OK",
+        "SortPort": "P1",
+        "TimeStamp": "2025-12-09T08:00:00Z"
      }'
+
+
+# --- 2️⃣ corepack ---
+curl -X POST http://192.168.1.207:3000/api/upload \
+     -H "Content-Type: application/json" \
+     -d '{
+        "stage": "corepack",
+        "orderId": "OD123",
+        "orderCode": "C001",
+        "corepackBarcode": "CP001",
+        "TimeStamp": "2025-12-09T08:10:00Z"
+     }'
+
 
 
 # --- 3️⃣ daq970cellmeasure ---
-curl -X POST http://192.168.1.207:3001/influx/write \
+curl -X POST http://192.168.1.207:3000/api/upload \
      -H "Content-Type: application/json" \
      -d '{
-        "measurement": "daq970cellmeasure",
-        "data": {
-            "stage": "daq970cellmeasure",
-            "corepackBarcode": "CP001",
-            "voltagemaxthread": 3.7,
-            "voltageminthread": 3.6,
-            "voltagediffthread": 0.1,
-            "tempmaxthread": 35.5,
-            "tempminthread": 30.2,
-            "ch1_v": 3.65,
-            "ch1_t": 32.1,
-            "ch2_v": 3.66,
-            "ch2_t": 32.3,
-            "TimeStamp": "2025-12-09T08:20:00Z"
-        }
+        "stage": "daq970cellmeasure",
+        "corepackBarcode": "CP001",
+        "voltagemaxthread": 3.7,
+        "voltageminthread": 3.6,
+        "voltagediffthread": 0.1,
+        "tempmaxthread": 35.5,
+        "tempminthread": 30.2,
+        "ch1_v": 3.65,
+        "ch1_t": 32.1,
+        "ch2_v": 3.66,
+        "ch2_t": 32.3,
+        "TimeStamp": "2025-12-09T08:20:00Z"
      }'
+
 
 # --- 4️⃣ combine ---
-curl -X POST http://192.168.1.207:3001/influx/write \
+curl -X POST http://192.168.1.207:3000/api/upload \
      -H "Content-Type: application/json" \
      -d '{
-        "measurement": "combine",
-        "data": {
-            "stage": "combine",
-            "corepackBarcode": "CP001",
-            "caseBarcode": "CASE001",
-            "TimeStamp": "2025-12-09T08:30:00Z"
-        }
+        "stage": "combine",
+        "corepackBarcode": "CP001",
+        "caseBarcode": "CASE001",
+        "TimeStamp": "2025-12-09T08:30:00Z"
      }'
+
 
 # --- 5️⃣ etest ---
-curl -X POST http://192.168.1.207:3001/influx/write \
+curl -X POST http://192.168.1.207:3000/api/upload \
      -H "Content-Type: application/json" \
      -d '{
-        "measurement": "etest",
-        "data": {
-            "stage": "etest",
-            "caseBarcode": "CASE001",
-            "ocvoltage": 3.65,
-            "acir": 12.3,
-            "odcp": 0.1,
-            "v0": 3.64,
-            "a02c": 0.02,
-            "v1": 3.66,
-            "a5c": 0.05,
-            "dcir": 12.4,
-            "result": "PASS",
-            "TimeStamp": "2025-12-09T08:40:00Z"
-        }
+        "stage": "etest",
+        "caseBarcode": "CASE001",
+        "ocvoltage": 3.65,
+        "acir": 12.3,
+        "odcp": 0.1,
+        "v0": 3.64,
+        "a02c": 0.02,
+        "v1": 3.66,
+        "a5c": 0.05,
+        "dcir": 12.4,
+        "result": "PASS",
+        "TimeStamp": "2025-12-09T08:40:00Z"
      }'
 
+
 # --- 6️⃣ package ---
-curl -X POST http://192.168.1.207:3001/influx/write \
+curl -X POST http://192.168.1.207:3000/api/upload \
      -H "Content-Type: application/json" \
      -d '{
-        "measurement": "package",
-        "data": {
-            "stage": "package",
-            "caseBarcode": "CASE001",
-            "TimeStamp": "2025-12-09T08:50:00Z"
-        }
+        "stage": "package",
+        "caseBarcode": "CASE001",
+        "TimeStamp": "2025-12-09T08:50:00Z"
      }'
+
+--- 查詢 cellsort 最近 1 小時筆數 ---
+curl -X GET "http://192.168.1.207:3000/api/stats/cellsort?hours=1"
+
+--- 查詢 corepack 最近 2 小時筆數 ---
+curl -X GET "http://192.168.1.207:3000/api/stats/corepack?hours=2"
+
+--- 查詢 cellsort 最近 10 筆歷史資料（預設 limit=10） ---
+curl -X GET "http://192.168.1.207:3000/api/history/cellsort"
+
+--- 查詢 corepack 最近 5 筆歷史資料 ---
+curl -X GET "http://192.168.1.207:3000/api/history/corepack?limit=5"
