@@ -1,15 +1,53 @@
-	分選機				1. 數量
-	Core Pack組裝		2. 數量 內Barcode
-	點焊後DAQCell電壓檢測	3. 數量 DAQ Cell檢測數據
-	組裝外殼				4. 數量 內外Barcode
-	BMS焊接後DCIR		5. 數量 外Barcode DCIR檢測數據
-	包裝完成				6. 數量 外Barcode
-{
-  "Stage": "DAQ970", //站點 cellsort corepack DAQ970 Assemble BMSDCIR Package
-  "OrderID": "123", //單號 手工具 無人機
-  "OrderCode": "GusClient123123"
-  "CorePackBarcode": "GUStest123", //內Barcode 還沒有就Null
-  "CaseBarcode": "GUStest2123", //外Barcode 還沒有就Null
-  //任何想記錄的參數
-  "Timestamp": "2025-11-25 17:31:25"
+const { Point } = require('@influxdata/influxdb-client');
+const { writeApi } = require('./influxdb');
+
+const tagSchema = {
+    worksheet:["orderId"],
+    cellsort: ["orderId", "SortResult", "SortPort"], 
+    corepack: ["orderId"],
+    daq970cellmeasure: [],
+    combine: [],
+    etest: ["result"],
+    package: [],
+};
+
+function writeInflux(data) {
+    return new Promise((resolve, reject) => {
+        const measurement = data.stage;
+        const tags = tagSchema[measurement] || [];
+        const point = new Point(measurement);
+
+        // Tags
+        tags.forEach(tag => {
+            if (data[tag] !== undefined && data[tag] !== null) {
+                point.tag(tag, String(data[tag]));
+            }
+        });
+
+        // Fields
+        Object.keys(data).forEach(key => {
+            if (tags.includes(key) || key === "TimeStamp" || key === "stage") return;
+            const value = data[key];
+            if (value === undefined || value === null) return;
+            if (!isNaN(Number(value))) point.floatField(key, Number(value));
+            else point.stringField(key, String(value));
+        });
+
+        // Timestamp
+        point.timestamp(data.TimeStamp ? new Date(data.TimeStamp) : new Date());
+
+        console.log(`[Influx] Writing: ${point.toLineProtocol()}`);
+        writeApi.writePoint(point);
+
+        writeApi
+            .flush()
+            .then(() => resolve())
+            .catch(err => {
+                console.error("Influx flush error:", err);
+                reject(err);
+            });
+    });
 }
+
+
+module.exports = { writeInflux, tagSchema };

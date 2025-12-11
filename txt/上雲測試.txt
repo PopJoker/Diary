@@ -1,9 +1,9 @@
 
-# --- 0 daq970cellmeasure ---
+# --- 0 prework ---
 curl -X POST http://192.168.1.207:3000/api/upload \
      -H "Content-Type: application/json" \
      -d '{
-        "stage": "daq970cellmeasure",
+        "stage": "prework",
         "corepackBarcode": "CP001",
         "voltagemaxthread": 3.7,
         "voltageminthread": 3.6,

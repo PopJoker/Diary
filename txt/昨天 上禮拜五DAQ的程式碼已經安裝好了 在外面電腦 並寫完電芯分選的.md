@@ -1,8 +1,7 @@
-昨天		HMI 		更改IP測試 昨天有測試過後 能夠利用巨集腳本做到更改IP的效果
-		產線上雲		根據昨天的格式先撰寫並測試InfluxDB存取數據的方式
+昨天		HMI			燒錄好了有先交給Patrik		
+		產線上雲		昨天有做上傳測試 有些寫入方式要更改
 	
-今天		HMI			有做一個IP設置的頁面 等樓下Hirack好了就會上
-		產線上雲		昨天有做上傳測試 今天會做從Server端讀取數據的測試
+今天		產線上雲		繼續做模擬數據上傳的測試跟Debug
 
 barcode type day/mounth action power_kw
 	
