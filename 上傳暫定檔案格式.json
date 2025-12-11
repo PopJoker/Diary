@@ -1,53 +1,32 @@
-const { Point } = require('@influxdata/influxdb-client');
-const { writeApi } = require('./influxdb');
-
-const tagSchema = {
-    worksheet:["orderId"],
-    cellsort: ["orderId", "SortResult", "SortPort"], 
-    corepack: ["orderId"],
-    daq970cellmeasure: [],
-    combine: [],
-    etest: ["result"],
-    package: [],
-};
-
-function writeInflux(data) {
-    return new Promise((resolve, reject) => {
-        const measurement = data.stage;
-        const tags = tagSchema[measurement] || [];
-        const point = new Point(measurement);
-
-        // Tags
-        tags.forEach(tag => {
-            if (data[tag] !== undefined && data[tag] !== null) {
-                point.tag(tag, String(data[tag]));
-            }
-        });
-
-        // Fields
-        Object.keys(data).forEach(key => {
-            if (tags.includes(key) || key === "TimeStamp" || key === "stage") return;
-            const value = data[key];
-            if (value === undefined || value === null) return;
-            if (!isNaN(Number(value))) point.floatField(key, Number(value));
-            else point.stringField(key, String(value));
-        });
-
-        // Timestamp
-        point.timestamp(data.TimeStamp ? new Date(data.TimeStamp) : new Date());
-
-        console.log(`[Influx] Writing: ${point.toLineProtocol()}`);
-        writeApi.writePoint(point);
-
-        writeApi
-            .flush()
-            .then(() => resolve())
-            .catch(err => {
-                console.error("Influx flush error:", err);
-                reject(err);
-            });
-    });
+{
+  "stage": "daq970cellmeasure",       // 對應 Influx 的 measurement
+  "tag": {                            // Tags，由上傳端定義
+    "orderId": "5112-20250729001",
+    "lotId": "L20251209"
+  },
+  "tagfield": {                       // 字串型 fields，由上傳端定義
+    "corepackBarcode": "CP001",
+    "tester": "T123"
+  },
+  "ch1_v": 3.65,                      // 其他 float fields，可直接寫在最外層
+  "ch1_t": 32.1,
+  "ch2_v": 3.66,
+  "ch2_t": 32.3,
+  "tempmaxthread": 35.5,
+  "tempminthread": 30.2,
+  "voltagediffthread": 0.1,
+  "TimeStamp": "2025-12-09T08:20:00Z"  // 時間戳，可選
 }
 
 
-module.exports = { writeInflux, tagSchema };
+
+curl -X POST http://192.168.1.207:3000/api/upload \
+     -H "Content-Type: application/json" \
+     -d '{
+        "stage": "corepack",
+		"tagfield": { 
+        "orderId": "OD123",
+        "corepackBarcode": "CP001"
+		}
+        "TimeStamp": "2025-12-09T08:10:00Z"
+     }'
