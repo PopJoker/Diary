@@ -1,7 +1,6 @@
-昨天		HMI			燒錄好了有先交給Patrik		
-		產線上雲		昨天有做上傳測試 有些寫入方式要更改
+昨天		產線上雲		數據上傳跟呼叫的部分大致完成
 	
-今天		產線上雲		繼續做模擬數據上傳的測試跟Debug
+今天		產線上雲		持續進行開發
 
 barcode type day/mounth action power_kw
 	
@@ -12,7 +11,7 @@ barcode type day/mounth action power_kw
 	2.	高壓Rack
 
 	3.	二樓兩條線要試運行顯上數據收集及管理
-		3.1	Influx先測試格式上傳
+		3.1	Influx先測試格式上傳 #完成
 		3.2	DAQ格式確認
 		3.3	素梅派測試
 	
