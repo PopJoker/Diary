@@ -18,6 +18,12 @@
   "TimeStamp": "2025-12-09T08:20:00Z"  // 時間戳，可選
 }
 
+"orderInfo": {"orderId": "Loading...", "reqCount": 0, "dueDate": "---"},
+    "completed": 0,
+    "stationCounts": {
+      "cellsort": 0, "corepack": 0, "daq970cellmeasure": 0,
+      "combine": 0, "etest": 0, "package": 0
+}
 
 
 curl -X POST http://192.168.1.207:3000/api/upload \

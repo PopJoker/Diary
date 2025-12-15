@@ -22,15 +22,17 @@ curl -X POST http://192.168.1.207:3000/api/upload \
      -H "Content-Type: application/json" \
      -d '{
         "stage": "cellsort",
-        "orderId": "OD123",
-        "orderCode": "C001",
+	"tag": { 
+        "orderId": "OD123"
+	},
+	"tagfield": {
         "corepackBarcode": "CP001",
         "caseBarcode": "CASE001",
-        "voltage": 3.65,
-        "Resistance": 12.3,
         "SortResult": "OK",
-        "SortPort": "P1",
-        "TimeStamp": "2025-12-09T08:00:00Z"
+        "SortPort": "P1"
+	},
+        "voltage": 3.65,
+        "Resistance": 12.3
      }'
 
 
@@ -82,7 +84,10 @@ curl -X POST http://192.168.1.207:3000/api/upload \
      -H "Content-Type: application/json" \
      -d '{
         "stage": "etest",
+	"tagfield": {
         "caseBarcode": "CASE001",
+	 "result": "PASS"
+	},
         "ocvoltage": 3.65,
         "acir": 12.3,
         "odcp": 0.1,
@@ -90,9 +95,7 @@ curl -X POST http://192.168.1.207:3000/api/upload \
         "a02c": 0.02,
         "v1": 3.66,
         "a5c": 0.05,
-        "dcir": 12.4,
-        "result": "PASS",
-        "TimeStamp": "2025-12-09T08:40:00Z"
+        "dcir": 12.4
      }'
 
 

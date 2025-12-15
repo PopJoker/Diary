@@ -1,6 +1,6 @@
-昨天		產線上雲		數據上傳跟呼叫的部分大致完成
+昨天		產線上雲		DAQ 電芯測試數據上傳方式已經更新 持續測試上傳
 	
-今天		產線上雲		持續進行開發
+今天		產線上雲		協助產線WebAPI的開發
 
 barcode type day/mounth action power_kw
 	
@@ -14,6 +14,8 @@ barcode type day/mounth action power_kw
 		3.1	Influx先測試格式上傳 #完成
 		3.2	DAQ格式確認
 		3.3	素梅派測試
+
+	4.	明後天找天去健康檢查
 	
 ==========================
 
