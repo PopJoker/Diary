@@ -3,7 +3,7 @@
 今天		產線上雲		History 加一個casebarcode
 
 barcode type day/mounth action power_kw
-	
+	powershell.exe -ExecutionPolicy Bypass -File
 ==========================
 	
 	1.	15kW SOP
