@@ -1,6 +1,6 @@
-昨天		產線上雲		Web文傳寫好了 有把網頁設在Moxa上 已經可以抓數據了
-	
-今天		QRcode生成	工單號碼生 站點生 工單號 站點 需求日期 需求數量 輸入
+昨天		產線上雲		模擬測試
+			
+今天		產線上雲		History 加一個casebarcode
 
 barcode type day/mounth action power_kw
 	
