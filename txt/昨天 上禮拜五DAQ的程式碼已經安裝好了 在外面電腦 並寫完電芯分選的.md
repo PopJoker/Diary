@@ -1,8 +1,7 @@
-昨天		產線上雲		模擬測試
+昨天		產線上雲		正在進行模擬測試
 			
-今天		產線上雲		History 加一個casebarcode=>corpackbarcode=>所有關於數據 回查
-					Dashbord 加一個如有Resut判斷Resut為true才算通過
-					
+今天		產線上雲		持續debug並更新API功能
+
 	barcode type day/mounth action power_kw
 	powershell.exe -ExecutionPolicy Bypass -File
 ==========================
