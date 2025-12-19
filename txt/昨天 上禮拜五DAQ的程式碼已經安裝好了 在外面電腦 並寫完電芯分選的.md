@@ -1,6 +1,7 @@
 昨天		產線上雲		正在進行模擬測試
 			
-今天		產線上雲		持續debug並更新API功能
+今天		依頓HMI		昨天有收取
+
 
 	barcode type day/mounth action power_kw
 	powershell.exe -ExecutionPolicy Bypass -File

@@ -1,0 +1,9 @@
+mqtt訂閱ems.gustech.com.tw
+
+學姊->
+db[
+mqtt ->
+influxdb ->
+]
+->webapi
+->iPhone 

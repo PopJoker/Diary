@@ -1,0 +1,320 @@
+const express = require('express');
+const router = express.Router();
+const { writeInflux } = require('../influxWriter');
+const { queryApi } = require('../influxdb');
+const bucket = process.env.INFLUXDB_BUCKET;
+
+// Helper: 統一回傳
+function apiResponse(res, status, code, message, data = null) {
+    return res.status(code).json({ status, code, message, data });
+}
+
+// --- POST /upload (支援單筆 & 批次) ---
+router.post('/upload', async (req, res) => {
+    try {
+        const body = req.body;
+        if (!body) return apiResponse(res, 'error', 400, 'Missing body');
+
+        const items = Array.isArray(body) ? body : [body];
+        const results = [];
+
+        for (const data of items) {
+            try {
+                if (!data.stage) throw new Error("Missing 'stage' in data");
+
+                await writeInflux(data);
+                results.push({ stage: data.stage, status: 'ok' });
+            } catch (err) {
+                results.push({ stage: data.stage || null, status: 'error', message: err.message });
+            }
+        }
+
+        // 統一回傳
+        const hasError = results.some(r => r.status === 'error');
+        if (hasError) {
+            apiResponse(res, 'fail', 400, 'Some uploads failed', results);
+        } else {
+            apiResponse(res, 'success', 200, 'All uploads completed', results);
+        }
+
+    } catch (err) {
+        console.error(err);
+        apiResponse(res, 'error', 500, err.message);
+    }
+});
+
+// --- GET /stats/:station ---
+router.get('/stats/:station', async (req, res) => {
+    const station = req.params.station;
+    const hours = Number(req.query.hours) || 1;
+
+    const fluxQuery = `
+        from(bucket: "${bucket}")
+        |> range(start: -${hours}h)
+        |> filter(fn: (r) => r["_measurement"] == "${station}")
+        |> keep(columns: ["_time"])
+        |> group()
+        |> distinct(column: "_time")
+        |> map(fn: (r) => ({ r with cnt: 1 }))
+        |> sum(column: "cnt")
+        |> toInt()
+    `;
+
+    try {
+        let countValue = 0;
+
+        for await (const { values, tableMeta } of queryApi.iterateRows(fluxQuery)) {
+            const o = tableMeta.toObject(values);
+            console.log(o) 
+            countValue += o.cnt || 0;
+        }
+
+        res.json({ station, hours, count: countValue });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// --- GET /history/:station ---
+router.get('/history/:station', async (req, res) => {
+    const station = req.params.station;
+    const limitN = Number(req.query.limit) || 10;
+
+    const fluxQuery = `
+        from(bucket: "${bucket}")
+        |> range(start: 0)
+        |> filter(fn: (r) => r["_measurement"] == "${station}")
+        |> pivot(rowKey: ["_time"], columnKey: ["_field"], valueColumn: "_value")
+        |> sort(columns: ["_time"], desc: true)
+        |> limit(n: ${limitN})
+    `;
+
+    try {
+        const result = [];
+        for await (const { values, tableMeta } of queryApi.iterateRows(fluxQuery)) {
+            const row = tableMeta.toObject(values);
+
+            // 移除 null / undefined 欄位
+            Object.keys(row).forEach(key => {
+                if (row[key] === null || row[key] === ""|| row[key] === undefined) {
+                    delete row[key];
+                }
+            });
+
+            result.push(row);
+        }
+
+        res.json({ station, history: result });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
+router.get('/historytest/:station', async (req, res) => {
+    const station = req.params.station;
+    const limitN = Number(req.query.limit) || 10;
+
+    // 支援多個 barcode query
+    const barcodeFilters = [];
+    if (req.query.corepackBarcode) {
+        barcodeFilters.push({ field: 'corepackBarcode', value: req.query.corepackBarcode });
+    }
+    if (req.query.caseBarcode) {
+        barcodeFilters.push({ field: 'caseBarcode', value: req.query.caseBarcode });
+    }
+
+    let fluxQuery = `
+        from(bucket: "${bucket}")
+        |> range(start: 0)
+        |> filter(fn: (r) => r["_measurement"] == "${station}")
+    `;
+
+    // 加入 barcode filter
+    barcodeFilters.forEach(bf => {
+        fluxQuery += `
+            |> filter(fn: (r) => r["${bf.field}"] == "${bf.value}")
+        `;
+    });
+
+    fluxQuery += `
+        |> pivot(rowKey: ["_time"], columnKey: ["_field"], valueColumn: "_value")
+        |> sort(columns: ["_time"], desc: true)
+        |> limit(n: ${limitN})
+    `;
+
+    try {
+        const result = [];
+        for await (const { values, tableMeta } of queryApi.iterateRows(fluxQuery)) {
+            const row = tableMeta.toObject(values);
+            Object.keys(row).forEach(key => {
+                if (row[key] === null || row[key] === "" || row[key] === undefined) delete row[key];
+            });
+            result.push(row);
+        }
+
+        res.json({ station, history: result });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// --- GET /find --- 
+// 範例：
+// /find?caseBarcode=CASE123
+// /find?corepackBarcode=CP456
+router.get('/find', async (req, res) => {
+    const { caseBarcode, corepackBarcode } = req.query;
+
+    if (!caseBarcode && !corepackBarcode) {
+        return res.status(400).json({ error: "Please provide either caseBarcode or corepackBarcode" });
+    }
+
+    try {
+        if (caseBarcode) {
+            // 1. 先查 combine 找到對應 corepackBarcode
+            const combineFlux = `
+                from(bucket: "${bucket}")
+                |> range(start: -30d)
+                |> filter(fn: (r) => r["_measurement"] == "combine")
+                |> filter(fn: (r) => r["caseBarcode"] == "${caseBarcode}")
+                |> keep(columns: ["corepackBarcode", "caseBarcode"])
+            `;
+            const corepackSet = new Set();
+            for await (const { values, tableMeta } of queryApi.iterateRows(combineFlux)) {
+                const row = tableMeta.toObject(values);
+                if (row.corepackBarcode) corepackSet.add(row.corepackBarcode);
+            }
+
+            res.json({
+                caseBarcode,
+                relatedCorepackBarcodes: Array.from(corepackSet)
+            });
+        } else if (corepackBarcode) {
+            // 1. 查 combine 找到對應 caseBarcode
+            const combineFlux = `
+                from(bucket: "${bucket}")
+                |> range(start: -30d)
+                |> filter(fn: (r) => r["_measurement"] == "combine")
+                |> filter(fn: (r) => r["corepackBarcode"] == "${corepackBarcode}")
+                |> keep(columns: ["corepackBarcode", "caseBarcode"])
+            `;
+            const caseSet = new Set();
+            for await (const { values, tableMeta } of queryApi.iterateRows(combineFlux)) {
+                const row = tableMeta.toObject(values);
+                if (row.caseBarcode) caseSet.add(row.caseBarcode);
+            }
+
+            res.json({
+                corepackBarcode,
+                relatedCaseBarcodes: Array.from(caseSet)
+            });
+        }
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
+
+
+// --- GET /weeklyhistory ---
+router.get('/weeklyhistory', async (req, res) => {
+    const stations = ["cellsort", "corepack", "daq970cellmeasure", "combine", "etest", "package"];
+    const { start, end } = req.query;
+
+    // === 1. 計算 UTC 日期區間 ===
+    let startDate, endDate;
+
+    if (start && end) {
+        startDate = new Date(`${start}T00:00:00Z`);
+        endDate   = new Date(`${end}T23:59:59Z`);
+    } else {
+        endDate = new Date();
+        endDate.setUTCHours(23, 59, 59, 999);
+
+        startDate = new Date(endDate);
+        startDate.setUTCDate(startDate.getUTCDate() - 6);
+        startDate.setUTCHours(0, 0, 0, 0);
+    }
+
+    if (isNaN(startDate) || isNaN(endDate) || startDate > endDate) {
+        return res.status(400).json({ error: "Invalid date range" });
+    }
+
+    // === 2. 產生每天的時間區間（UTC）===
+    const days = [];
+    const cursor = new Date(startDate);
+
+    while (cursor <= endDate) {
+        const dayStart = new Date(cursor);
+        dayStart.setUTCHours(0, 0, 0, 0);
+
+        const dayEnd = new Date(cursor);
+        dayEnd.setUTCHours(23, 59, 59, 999);
+
+        days.push({
+            date: dayStart.toISOString().slice(0, 10),
+            start: dayStart.toISOString(),
+            end: dayEnd.toISOString()
+        });
+
+        cursor.setUTCDate(cursor.getUTCDate() + 1);
+    }
+
+    // === 3. 初始化結果容器 ===
+    const result = {};
+    stations.forEach(station => {
+        result[station] = {};
+        days.forEach(d => result[station][d.date] = 0);
+    });
+
+    try {
+        // === 4. station × day → 使用 dashboard Flux 計數 ===
+        for (const station of stations) {
+            for (const day of days) {
+
+                const fluxQuery = `
+                    from(bucket: "${bucket}")
+                    |> range(start: ${day.start}, stop: ${day.end})
+                    |> filter(fn: (r) => r["_measurement"] == "${station}")
+                    |> keep(columns: ["_time"])
+                    |> group()
+                    |> distinct(column: "_time")
+                    |> map(fn: (r) => ({ r with cnt: 1 }))
+                    |> sum(column: "cnt")
+                    |> toInt()
+                `;
+
+                let count = 0;
+
+                for await (const { values, tableMeta } of queryApi.iterateRows(fluxQuery)) {
+                    const row = tableMeta.toObject(values);
+                    count = row.cnt || 0;
+                }
+
+                result[station][day.date] = count;
+            }
+        }
+
+        // === 5. 組成前端需要的格式 ===
+        const formatted = days.map(d => {
+            const obj = { date: d.date };
+            stations.forEach(station => {
+                obj[station] = result[station][d.date];
+            });
+            return obj;
+        });
+
+        res.json(formatted);
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
+module.exports = router;

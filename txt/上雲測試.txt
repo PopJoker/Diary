@@ -74,7 +74,7 @@ curl -X POST http://192.168.1.207:3000/api/upload \
      -d '{
         "stage": "combine",
         "corepackBarcode": "CP001",
-        "caseBarcode": "CASE001",
+        "caseBarcode": "FR07254002342",
         "TimeStamp": "2025-12-09T08:30:00Z"
      }'
 
