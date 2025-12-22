@@ -1,7 +1,7 @@
-昨天		產線上雲		正在進行模擬測試
+昨天		
 			
-今天		依頓HMI		昨天有收取
-
+今天		依頓HMI		恢復時間 TCP通訊紀錄留存
+		嘉義學姊家	舊轉新系統 會與文傳討論與規劃流程 規劃流程完成後進行
 
 	barcode type day/mounth action power_kw
 	powershell.exe -ExecutionPolicy Bypass -File
