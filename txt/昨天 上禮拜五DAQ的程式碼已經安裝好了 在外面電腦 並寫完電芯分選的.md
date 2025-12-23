@@ -1,7 +1,7 @@
-昨天		
+昨天		依頓HMI		TCP通訊測試 也有留存
 			
-今天		依頓HMI		恢復時間 TCP通訊紀錄留存
-		嘉義學姊家	舊轉新系統 會與文傳討論與規劃流程 規劃流程完成後進行
+今天		依頓HMI		目前至少明天通訊是沒問題
+		嘉義學姊家	舊轉新系統 今天會開始架設測試
 
 	barcode type day/mounth action power_kw
 	powershell.exe -ExecutionPolicy Bypass -File
