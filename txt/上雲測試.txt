@@ -44,7 +44,7 @@ curl -X POST http://192.168.1.207:3000/api/upload \
         "orderId": "OD123",
         "orderCode": "C001",
         "corepackBarcode": "CP001",
-        "TimeStamp": "2025-12-09T08:10:00Z"
+        "Timestamp": "2025-12-09T08:10:00Z"
      }'
 
 
@@ -73,9 +73,9 @@ curl -X POST http://192.168.1.207:3000/api/upload \
      -H "Content-Type: application/json" \
      -d '{
         "stage": "combine",
-        "corepackBarcode": "CP001",
-        "caseBarcode": "FR07254002342",
-        "TimeStamp": "2025-12-09T08:30:00Z"
+	"tagfield":{
+        "corepackBarcode": "07254003312",
+        "caseBarcode": "FR07254002441"}
      }'
 
 

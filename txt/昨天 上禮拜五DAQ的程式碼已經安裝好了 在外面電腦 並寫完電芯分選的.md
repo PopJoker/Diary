@@ -1,7 +1,7 @@
-昨天		依頓HMI		TCP通訊測試 也有留存
+昨天		依頓HMI		TCP通訊廠商來問完 沒問題可以通訊
+		嘉義學姊家	Server端可以收集數據
 			
-今天		依頓HMI		目前至少明天通訊是沒問題
-		嘉義學姊家	舊轉新系統 今天會開始架設測試
+今天		嘉義學姊家	新版程式寫好 等等做完最後確認沒問題後 會先上傳給APPLE審核 並跟MES確認MQTT轉移的事項
 
 	barcode type day/mounth action power_kw
 	powershell.exe -ExecutionPolicy Bypass -File
