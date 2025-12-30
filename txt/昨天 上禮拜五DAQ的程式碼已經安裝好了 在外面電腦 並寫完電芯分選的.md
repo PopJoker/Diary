@@ -1,7 +1,6 @@
-昨天		依頓HMI		TCP通訊廠商來問完 沒問題可以通訊
-		嘉義學姊家	Server端可以收集數據
+昨天		學姊家	APP有給Apple審核 目前還沒回覆
 			
-今天		嘉義學姊家	新版程式寫好 等等做完最後確認沒問題後 會先上傳給APPLE審核 並跟MES確認MQTT轉移的事項
+今天		學姊家	MQTT要改IP 今天會跟MES確認 轉移後看有沒有問題 沒有就ok
 
 	barcode type day/mounth action power_kw
 	powershell.exe -ExecutionPolicy Bypass -File
