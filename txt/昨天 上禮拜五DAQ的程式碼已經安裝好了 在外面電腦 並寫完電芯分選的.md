@@ -1,6 +1,6 @@
-昨天		學姊家	APP有給Apple審核 目前還沒回覆
+昨天		學姊家	Apple回復 APP Icon不要重複
 			
-今天		學姊家	MQTT要改IP 今天會跟MES確認 轉移後看有沒有問題 沒有就ok
+今天		學姊家	用一個新的APP 整理一下 再重新提交
 
 	barcode type day/mounth action power_kw
 	powershell.exe -ExecutionPolicy Bypass -File
