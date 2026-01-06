@@ -1,0 +1,17 @@
+sudo tar czvf ~/backup/influxdb/influxdb_backup_$(date +%F).tar.gz -C /var/lib/docker/volumes/internalcloudoffical_influxdb-data/_data .
+
+拉BackUp檔案
+
+丟到第三台
+
+docker compose down
+
+docker volume inspect internalcloudoffical_influxdb-data
+# 找到 Mountpoint 位置，例如 /var/lib/docker/volumes/internalcloudoffical_influxdb-data/_data
+
+# 進入資料夾
+sudo rm -rf /var/lib/docker/volumes/internalcloudoffical_influxdb-data/_data/*
+
+sudo tar xzvf ~/backup/influxdb/influxdb_backup_2026-01-06.tar.gz -C /var/lib/docker/volumes/internalcloudoffical_influxdb-data/_data
+
+docker compose up

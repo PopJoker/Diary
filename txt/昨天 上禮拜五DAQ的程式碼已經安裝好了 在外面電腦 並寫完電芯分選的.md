@@ -1,6 +1,6 @@
-昨天		學姊家	Apple回復 APP Icon不要重複
+昨天		學姊家	Apple回復 APP Icon 確認沒問題就重新發送審核 待Apple回復
 			
-今天		學姊家	用一個新的APP 整理一下 再重新提交
+今天		手工具產線 今天要轉移 Docker DataBase已經轉過去了 剩下Web的架設
 
 	barcode type day/mounth action power_kw
 	powershell.exe -ExecutionPolicy Bypass -File
