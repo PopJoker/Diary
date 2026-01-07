@@ -1,6 +1,7 @@
-昨天		學姊家	Apple回復 APP Icon 確認沒問題就重新發送審核 待Apple回復
+昨天		手工具產線	已經準備好轉移步驟 並測試過可以完全連數據一起轉移
 			
-今天		手工具產線 今天要轉移 Docker DataBase已經轉過去了 剩下Web的架設
+今天		手工具產線	會找時間進行全數轉移
+		BLE的APP		會做一個APP再去跟阿傑對應
 
 	barcode type day/mounth action power_kw
 	powershell.exe -ExecutionPolicy Bypass -File
