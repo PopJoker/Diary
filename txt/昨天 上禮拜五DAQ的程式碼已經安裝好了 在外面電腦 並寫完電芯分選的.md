@@ -1,10 +1,18 @@
-昨天		手工具產線	已經準備好轉移步驟 並測試過可以完全連數據一起轉移
-			
-今天		手工具產線	會找時間進行全數轉移
-		BLE的APP		會做一個APP再去跟阿傑對應
+昨天		手工具產線	轉移好了 目前沒發現問題 持續觀察
+		學姊家APP	Apple審核過了 目前有發現一點問題 與畫面優化的方向
+				
+今天		BLE APP		有寫了一版APP去解析藍芽數據Spec 並顯示 會再根據昨天討論車用藍芽prespec 去進行APP畫面設計
+		學姊家APP	會找時間進行修改 盡快提出審核
+				
+貼APP android ios web的連結與下載方式
+android(Google Drive Share) https://drive.google.com/uc?export=download&id=1furQw-gf2qtfWr8RO6dmThSgsxAMQtZE
+ios(App Store) https://apps.apple.com/us/app/gusems/id6754067023
+web https://webems.gustech.com.tw/
+帳號：GusOfficeTest@gus-tech.com.tw
+密碼：Gus150211
 
-	barcode type day/mounth action power_kw
-	powershell.exe -ExecutionPolicy Bypass -File
+手工具產線網址 http://10.13.29.10:8080/
+貼手工具產線網址
 ==========================
 	
 	1.	15kW SOP
