@@ -1,8 +1,9 @@
-昨天		手工具產線	轉移好了 目前沒發現問題 持續觀察
-		學姊家APP	Apple審核過了 目前有發現一點問題 與畫面優化的方向
-				
-今天		BLE APP		有寫了一版APP去解析藍芽數據Spec 並顯示 會再根據昨天討論車用藍芽prespec 去進行APP畫面設計
-		學姊家APP	會找時間進行修改 盡快提出審核
+昨天		
+
+今天		BLE APP		會跟阿傑一起做顯示測試
+		學姊家APP	進行修改 測試完成 今天會盡快提出審核
+如果到背景 就不管設備 但回到APP就要無感重連
+
 				
 貼APP android ios web的連結與下載方式
 android(Google Drive Share) https://drive.google.com/uc?export=download&id=1furQw-gf2qtfWr8RO6dmThSgsxAMQtZE
