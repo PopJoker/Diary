@@ -1,27 +1,26 @@
-今天		學姊家APP	歷史數據API 有找到問題 是在計算功率累積的時候 在Influx的沒考慮到UTC時間 語法有寫錯 所以會多算時間 功率就會多累積
-		APP藍芽		有先用文傳的手機用成IOS版本 藍芽連線有些問題 
+今天		藍芽AppleAPP		有上傳給Apple審核 待回覆
+						12V 現在有一個開關MOS的功能 剛剛有測試可以連線
+		
+明天		藍牙工程版App	會先加一個Mos開關 方便測試 但後續要討論一下這個功能是否有危險性
+		Gus MES			APP 畫面有點想法 會先規劃 討論是否合適 再開始進行程式跟API修改
+		
+		
+##		找時間要給產線Qrcode生成器 明天問彥偉
+		
+15Kw	找時間驗機
+		
+2/6		
+		
+==========================
+	android(Google Drive Share) https://drive.google.com/uc?export=download&id=1furQw-gf2qtfWr8RO6dmThSgsxAMQtZE
+	ios(App Store) https://apps.apple.com/us/app/gusems/id6754067023
+	web https://webems.gustech.com.tw/
 
-明天		APP藍芽		會再跟文傳討論 沒問題後會上IOS 的 APP Store
+	帳號：GusOfficeTest@gus-tech.com.tw
+	密碼：Gus150211
 
-##找時間要給產線Qrcode生成器
-
-15Kw		找時間驗機
-安哲 加個Braker 附載改燈泡板
-
-2/6
-
-如果到背景 就不管設備 但回到APP就要無感重連
-
-				
-貼APP android ios web的連結與下載方式
-android(Google Drive Share) https://drive.google.com/uc?export=download&id=1furQw-gf2qtfWr8RO6dmThSgsxAMQtZE
-ios(App Store) https://apps.apple.com/us/app/gusems/id6754067023
-web https://webems.gustech.com.tw/
-帳號：GusOfficeTest@gus-tech.com.tw
-密碼：Gus150211
-
-手工具產線網址 http://10.13.29.10:8080/
-貼手工具產線網址
+	手工具產線網址 http://10.13.29.10:8080/
+	貼手工具產線網址
 ==========================
 	
 	1.	15kW SOP
