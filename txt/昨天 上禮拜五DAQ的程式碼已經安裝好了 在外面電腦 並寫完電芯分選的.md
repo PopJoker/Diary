@@ -1,10 +1,22 @@
-今天		藍芽APP			除了有拿掉本來的審核權限頁外 有增加之前預防系統字體畫面爆炸的功能 今天有處理Apple在關掉後開啟自動重連的問題
-						但目前還沒找到原因 導致現在如果使用者關掉APP 再重新開啟 會需要重新掃描條碼
-						目前有先給Apple審核 後續會找無法重連的問題 修正好在用更新的方式上傳 審核時間會比較快
+今天		藍芽APP			Apple 有回復需要Apple手機跟真的藍芽裝置連線的影片 所以有給Apple之前拍的影片
 
-		Gus ems app		下午有收到Helan的反饋 所以有更改部分 目前APP更改的還差不多
+		Gus ems Server	今天有談到 需要知道市電 電池 PCS 是否離線 所以正在規劃並新增API
+						上次有發現Web之前累積功率的方式有問題 APP的API也同步更正
 
-明天		Gus ems APP		下周會盡快提出更新審核給Apple
+明天		Gus ems Server	持續進行判斷市電 PCS 是否離線的Server API
+						完成後Web跟APP就會進行警告的導入
+
+【CT01】5kWh鈦酸鋰電池模組EVT階段文件 放置以下路徑
+
+附件_ 試產問題清單, 填寫問題改善對策
+
+待資料完整後進行EVT 結案Pre Meeting，謝謝
+ 
+
+文件放置路徑: 
+
+\\gus01ad.com\fs\OAFS\02_部門資料區\CA430_模組開發部\Project\CT01_詮祐 5kWh ESS\2.EVT
+
 
 市電或電池電壓為0 三次 要警示
 
@@ -48,13 +60,21 @@
 
 ##		找時間詢價 #完成
 
-##		APP 充放電數據修正
+##		APP 充放電數據修正 #完成
 
-##		APP List數據修正
+##		APP List數據修正 #完成
 
-##		Web API 修正
+##		Web API 修正 #完成
 
 ##		Web 更新 設備管理傳輸數據錯誤 #待修正
+
+##		PCS Grid Battery 都要做alarm 確保沒斷線
+從PCS知道 他有沒有
+  "Batterypowerdirection": 0,
+  "DCACpowerdirection": 0,
+  "Linepowerdirection": 0,
+
+##		做個警示
 
 ##		客戶支援 教學影片 #待修正	
 
