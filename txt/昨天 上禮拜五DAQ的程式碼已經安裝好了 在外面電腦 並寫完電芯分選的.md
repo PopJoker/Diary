@@ -1,8 +1,19 @@
-今天		Gus ems Server	今天有談到 需要知道市電 電池 PCS 是否離線 所以正在規劃並新增API
-						上次有發現Web之前累積功率的方式有問題 APP的API也同步更正
+今天		Gus ems Server	判斷市電 PCS 是否離線的API Funtion 有導入APP 先測試應用
+						目前效果不錯 明天會把這個Funtion導入到Web更新上去
+						
+						Hirack 樓下那台今天跟Denis Kevin副理處理好了 剛剛跟文傳用Moxa先用舊版Spec 上雲端 電壓 電流 SOC 那些目前都正確
+						
+						BLE 接Wifi 有跟阿傑先訂出相關的Spec 整理完後會發出
+						
+						上次Helen發出的回饋 目前還在收攏
+						
+明天		Gus ems Server	Hirack 會更新成新版的Spec 這樣 存取跟下載Excel 欄位才會正確
 
-明天		Gus ems Server	持續進行判斷市電 PCS 是否離線的Server API
-						完成後Web跟APP就會進行警告的導入
+						APP 會先根據今天討論的Spec去做 頁面設計
+
+						Web APP整理完後會發相關信件回復
+
+==========================
 
 【CT01】5kWh鈦酸鋰電池模組EVT階段文件 放置以下路徑
 
@@ -69,6 +80,8 @@
 ##		PCS Grid Battery 都要做alarm 確保沒斷線API #完成
 
 ##		做個警示 #完成
+
+##		APP BLE配網 #進行中
 
 ##		APP PCS 稍微改好後 先上架
 
