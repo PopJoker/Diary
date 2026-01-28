@@ -1,6 +1,4 @@
-今天		藍芽APP			Apple 有回復需要Apple手機跟真的藍芽裝置連線的影片 所以有給Apple之前拍的影片
-
-		Gus ems Server	今天有談到 需要知道市電 電池 PCS 是否離線 所以正在規劃並新增API
+今天		Gus ems Server	今天有談到 需要知道市電 電池 PCS 是否離線 所以正在規劃並新增API
 						上次有發現Web之前累積功率的方式有問題 APP的API也同步更正
 
 明天		Gus ems Server	持續進行判斷市電 PCS 是否離線的Server API
@@ -66,17 +64,17 @@
 
 ##		Web API 修正 #完成
 
-##		Web 更新 設備管理傳輸數據錯誤 #待修正
+##		Web 更新 設備管理傳輸數據錯誤 #完成
 
-##		PCS Grid Battery 都要做alarm 確保沒斷線
-從PCS知道 他有沒有
-  "Batterypowerdirection": 0,
-  "DCACpowerdirection": 0,
-  "Linepowerdirection": 0,
+##		PCS Grid Battery 都要做alarm 確保沒斷線API #完成
 
-##		做個警示
+##		做個警示 #完成
 
-##		客戶支援 教學影片 #待修正	
+##		APP PCS 稍微改好後 先上架
+
+##		客戶支援 教學影片 #待修正
+
+##		Web 15kW 加入斷線判斷 與警示訊息 跳窗
 
 ##		local端不限制有幾貨櫃 Max:12
 
@@ -92,7 +90,6 @@
 		
 2/6		
 
-網路應用程式 survey
 		
 ==========================
 	android(Google Drive Share) https://drive.google.com/uc?export=download&id=1furQw-gf2qtfWr8RO6dmThSgsxAMQtZE
