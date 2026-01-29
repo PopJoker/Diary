@@ -1,17 +1,17 @@
-今天		Gus ems Server	判斷市電 PCS 是否離線的API Funtion 有導入APP 先測試應用
-						目前效果不錯 明天會把這個Funtion導入到Web更新上去
-						
-						Hirack 樓下那台今天跟Denis Kevin副理處理好了 剛剛跟文傳用Moxa先用舊版Spec 上雲端 電壓 電流 SOC 那些目前都正確
-						
-						BLE 接Wifi 有跟阿傑先訂出相關的Spec 整理完後會發出
-						
-						上次Helen發出的回饋 目前還在收攏
-						
-明天		Gus ems Server	Hirack 會更新成新版的Spec 這樣 存取跟下載Excel 欄位才會正確
+今天		BLE相關Wifi Spec	有發出給阿傑 APP也會持續更新
 
-						APP 會先根據今天討論的Spec去做 頁面設計
+		回饋回復			今天統整好後有回覆給Helan
 
-						Web APP整理完後會發相關信件回復
+		Gus ems App		今天有更新 打包給Apple 審核中 
+
+		Gus ble Apple		已經審核成功 可以下載了
+
+		Gus ems Web		今天有跟文傳討論畫面設計 與頁面需新增的部分 明天持續進行更新
+
+				
+明天		Gus ems Web		持續更新Web 參照 更新目標.txt
+
+
 
 ==========================
 
