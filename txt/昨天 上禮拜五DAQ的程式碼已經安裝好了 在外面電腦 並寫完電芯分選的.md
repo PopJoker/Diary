@@ -1,17 +1,11 @@
-今天		BLE相關Wifi Spec	有發出給阿傑 APP也會持續更新
+今天		Gus ems Web		今天有更新即時頁面 有把判斷斷線的Funtion寫進WebAPI 並增加在即時頁面會馬上Pop up 的警告效果[後續會再討論 如果太驚悚看是要讓使用者選擇或拿掉]
+						歷史數據 有把各Pack的ID加入摺線圖的API當中 讓網頁可以直接顯示各ID的 電壓 電流跟SOC
+						有新增一個告警頁面 類似歷史數據 查看設備的Systemlog
+						網頁已經更新好 現在就可以看
+		
+		Gus APP			有更新APK 再麻煩幫我在點一次連結更新一下 Apple版本也更新完畢 麻煩再幫我去App store更新
 
-		回饋回復			今天統整好後有回覆給Helan
-
-		Gus ems App		今天有更新 打包給Apple 審核中 
-
-		Gus ble Apple		已經審核成功 可以下載了
-
-		Gus ems Web		今天有跟文傳討論畫面設計 與頁面需新增的部分 明天持續進行更新
-
-				
 明天		Gus ems Web		持續更新Web 參照 更新目標.txt
-
-
 
 ==========================
 
