@@ -1,10 +1,5 @@
-今天		Gus ems Web		今天有更新即時頁面 有把判斷斷線的Funtion寫進WebAPI 並增加在即時頁面會馬上Pop up 的警告效果[後續會再討論 如果太驚悚看是要讓使用者選擇或拿掉]
-						歷史數據 有把各Pack的ID加入摺線圖的API當中 讓網頁可以直接顯示各ID的 電壓 電流跟SOC
-						有新增一個告警頁面 類似歷史數據 查看設備的Systemlog
-						網頁已經更新好 現在就可以看
-		
-		Gus APP			有更新APK 再麻煩幫我在點一次連結更新一下 Apple版本也更新完畢 麻煩再幫我去App store更新
-
+今天		Gus ems Web		設備管理增加
+						
 明天		Gus ems Web		持續更新Web 參照 更新目標.txt
 
 ==========================
@@ -19,7 +14,6 @@
 文件放置路徑: 
 
 \\gus01ad.com\fs\OAFS\02_部門資料區\CA430_模組開發部\Project\CT01_詮祐 5kWh ESS\2.EVT
-
 
 市電或電池電壓為0 三次 要警示
 
