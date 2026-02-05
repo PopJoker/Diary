@@ -1,5 +1,18 @@
 Web
 
+Server Token	[需新增]	改30天 V
+[需新增]	admin lock	 BMS PCS報表下載隱藏、外層Tab list隱藏 => 解鎖Btn V
+[需新增]	變更日誌	取50個 一頁limt10 V
+[需新增]	PCS設定	允許AC充電的Chk box V
+告警頁面	[需新增]	可滑動 V
+
+
+ALL	[需新增]	App title V
+PCS設定	[需新增]	允許AC充電的Chk box V
+BLE	[需新增]	完整功能 V
+綁定過程導入BLE設備連網 V
+If Device list = 空 導覽頁面 V
+
 -下載按鈕要鎖起來
  
 -即時頁面- 導入判斷與警示
