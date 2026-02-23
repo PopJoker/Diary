@@ -1,7 +1,0 @@
-I/flutter (32462): 2026-02-04 10:31:52.560642 WifiStatus:1
-D/[FBP-Android](32462): [FBP] onMethodCall: readCharacteristic
-D/[FBP-Android](32462): [FBP] onCharacteristicRead:
-D/[FBP-Android](32462): [FBP]   chr: 4575
-D/[FBP-Android](32462): [FBP]   status: GATT_SUCCESS (0)
-D/[FBP-Android](32462): [FBP]   instanceId: 0
-I/flutter (32462): 2026-02-04 10:31:53.734088 WifiStatus:3

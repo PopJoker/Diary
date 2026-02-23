@@ -4,4 +4,4 @@ Hirack Spec 更新  #完成
 
 歷史下載按鈕 #完成
 
-Hirack HMI 訂閱功能測試 進行中 訂閱失效問題
+Hirack HMI 訂閱功能測試 #完成

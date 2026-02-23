@@ -1,0 +1,70 @@
+// ./routes/pcs.js
+const express = require('express');
+const router = express.Router();
+const db = require('../db');
+const { publishToDevice } = require('../mqttPublisher');
+const logRouter = require('./log');
+const insertSystemLog = logRouter.insertSystemLog;
+const insertSystemLogUnlimited = logRouter.insertSystemLogUnlimited;
+
+// Notice: this will only work on LES model
+
+// POST /api2/hesCNTR/control
+router.post('/control', async (req, res) => {
+    const { serialNumber, dataType, payload } = req.body;
+
+    if (!serialNumber || !dataType || !payload) {
+        return res.status(400).json({ success: false, error: 'serialNumber, dataType, payload 都必填' });
+    }
+
+    try {
+        // publishToDevice 會等到收到 Status=3 的 ACK 才 resolve
+        const ackData = await publishToDevice(serialNumber, dataType, payload);
+
+        // 判斷 payload 類型，生成 log 訊息
+        let logMessage = '';
+        if (payload.BatteryBackupSoc !== undefined) {
+            // SOC 備援模式
+            logMessage = `設定 備援SOC 為 ${payload.BatteryBackupSoc}%`;
+        } else if (
+            payload.StarttimeforenableACchargerworking !== undefined &&
+            payload.EndingtimeforenableACchargerworking !== undefined
+        ) {
+            // AC 充電時間（只記主要時間）
+            const start = payload.StarttimeforenableACchargerworking;
+            const end = payload.EndingtimeforenableACchargerworking;
+
+            const startHour = Math.floor(start / 100).toString().padStart(2, '0');
+            const startMinute = (start % 100).toString().padStart(2, '0');
+            const endHour = Math.floor(end / 100).toString().padStart(2, '0');
+            const endMinute = (end % 100).toString().padStart(2, '0');
+
+            logMessage = `設定 AC 充電時間為 ${startHour}:${startMinute} ~ ${endHour}:${endMinute}`;
+        } else if (payload.EnabledisableACchargebattery !== undefined) {
+            // AC 允許/禁止充放電
+            const allow = payload.EnabledisableACchargebattery==1 ? '允許' : '禁止';
+            logMessage = `設定 AC 充放電為 ${allow}`;
+        } else {
+            logMessage = '更改 PCS 設置 (未知 payload 格式)';
+        }
+
+        await insertSystemLogUnlimited(
+            serialNumber,
+            'Notice',
+            '更改 PCS 設置',
+            logMessage
+        );
+
+        res.json({
+            success: true,
+            message: `已發佈到 ${serialNumber}/${dataType}`,
+            ack: ackData
+        });
+    } catch (err) {
+        console.error('publish API 發生錯誤:', err);
+        res.status(500).json({ success: false, error: err.message });
+    }
+});
+
+
+module.exports = router;
