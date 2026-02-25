@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
   <diagram name="第 1 页" id="de51RvoS_8-6OynaZwiD">
-    <mxGraphModel dx="4104" dy="2440" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="396" dy="234" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -83,6 +83,13 @@
         <mxCell id="hLiX6c9iqkMJx4k6foZq-125" edge="1" parent="1" source="hLiX6c9iqkMJx4k6foZq-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hLiX6c9iqkMJx4k6foZq-124" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="hLiX6c9iqkMJx4k6foZq-139" edge="1" parent="1" source="hLiX6c9iqkMJx4k6foZq-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="hLiX6c9iqkMJx4k6foZq-63">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1095" y="1272" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="hLiX6c9iqkMJx4k6foZq-35" parent="1" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fontSize=17;" value="&lt;div&gt;電池櫃數據&lt;/div&gt;" vertex="1">
           <mxGeometry height="45.75" width="150" x="1020" y="623.79" as="geometry" />
         </mxCell>
@@ -140,6 +147,19 @@
         </mxCell>
         <mxCell id="hLiX6c9iqkMJx4k6foZq-137" edge="1" parent="1" source="hLiX6c9iqkMJx4k6foZq-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="hLiX6c9iqkMJx4k6foZq-121">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hLiX6c9iqkMJx4k6foZq-141" edge="1" parent="1" source="hLiX6c9iqkMJx4k6foZq-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="hLiX6c9iqkMJx4k6foZq-124">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1095" y="550" />
+              <mxPoint x="1300" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hLiX6c9iqkMJx4k6foZq-142" connectable="0" parent="hLiX6c9iqkMJx4k6foZq-141" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="無" vertex="1">
+          <mxGeometry relative="1" x="0.4416" y="-2" as="geometry">
+            <mxPoint x="-61" y="-2" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="hLiX6c9iqkMJx4k6foZq-67" parent="1" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=5;dy=0;rounded=1;arcSize=8;strokeWidth=2;" value="&lt;div style=&quot;font-size: 17px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;HMI人機介面&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 17px;&quot;&gt;暫存器&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="150" x="1020" y="436.16999999999996" as="geometry" />
@@ -284,20 +304,6 @@
         <mxCell id="hLiX6c9iqkMJx4k6foZq-124" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=17;rounded=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="有沒有&lt;div&gt;異常狀態&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="125" x="1237" y="596.66" as="geometry" />
         </mxCell>
-        <mxCell id="hLiX6c9iqkMJx4k6foZq-126" edge="1" parent="1" source="hLiX6c9iqkMJx4k6foZq-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" target="hLiX6c9iqkMJx4k6foZq-124" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1300" y="466.66999999999996" />
-            </Array>
-            <mxPoint x="1705" y="509.66999999999996" as="sourcePoint" />
-            <mxPoint x="1350" y="559.67" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hLiX6c9iqkMJx4k6foZq-127" connectable="0" parent="hLiX6c9iqkMJx4k6foZq-126" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" value="無" vertex="1">
-          <mxGeometry relative="1" x="-0.4555" as="geometry">
-            <mxPoint x="58" y="63" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="hLiX6c9iqkMJx4k6foZq-130" edge="1" parent="1" source="hLiX6c9iqkMJx4k6foZq-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1200" y="669.67" as="sourcePoint" />
@@ -306,7 +312,7 @@
         </mxCell>
         <mxCell id="hLiX6c9iqkMJx4k6foZq-131" connectable="0" parent="hLiX6c9iqkMJx4k6foZq-130" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="有" vertex="1">
           <mxGeometry relative="1" x="0.1452" y="-3" as="geometry">
-            <mxPoint x="3" as="offset" />
+            <mxPoint x="3" y="-5" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hLiX6c9iqkMJx4k6foZq-132" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=17;" value="顯示驚嘆號&lt;div&gt;警示異常&lt;/div&gt;" vertex="1">
