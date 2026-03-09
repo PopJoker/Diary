@@ -1,0 +1,10 @@
+Apple開發紀錄 2026/03/06
+Flutter 中
+await device.requestMtu(512); 只能在Android上使用
+更改方向
+try {
+  if (Platform.isAndroid) {
+    await device.requestMtu(512);
+  }
+} catch (_) {}
+不限定 如果安卓可以就用安卓設定 如果設失敗依然可以正常通訊
