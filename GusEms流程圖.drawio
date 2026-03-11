@@ -1,0 +1,149 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram name="第 1 页" id="35mCaMJxzt1OBntCgeig">
+    <mxGraphModel dx="1042" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-16" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="420" width="270" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-10" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-16" source="QNVvN-iR-K0-6vGK9Hkz-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QNVvN-iR-K0-6vGK9Hkz-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-14" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-16" source="QNVvN-iR-K0-6vGK9Hkz-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="QNVvN-iR-K0-6vGK9Hkz-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="70" />
+              <mxPoint x="210" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-1" parent="QNVvN-iR-K0-6vGK9Hkz-16" style="rounded=1;whiteSpace=wrap;html=1;" value="產生 CA 憑證&amp;nbsp;&lt;div&gt;(20年效期)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-11" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-16" source="QNVvN-iR-K0-6vGK9Hkz-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QNVvN-iR-K0-6vGK9Hkz-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-2" parent="QNVvN-iR-K0-6vGK9Hkz-16" style="rounded=1;whiteSpace=wrap;html=1;" value="離線保存 CA 私鑰" vertex="1">
+          <mxGeometry height="60" width="120" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-15" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-16" source="QNVvN-iR-K0-6vGK9Hkz-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QNVvN-iR-K0-6vGK9Hkz-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-5" parent="QNVvN-iR-K0-6vGK9Hkz-16" style="rounded=1;whiteSpace=wrap;html=1;" value="交付 CA 憑證&lt;div&gt;給韌體團隊&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-6" parent="QNVvN-iR-K0-6vGK9Hkz-16" style="rounded=1;whiteSpace=wrap;html=1;" value="將憑證燒錄至韌體" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-12" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-16" source="QNVvN-iR-K0-6vGK9Hkz-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QNVvN-iR-K0-6vGK9Hkz-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-7" parent="QNVvN-iR-K0-6vGK9Hkz-16" style="rounded=1;whiteSpace=wrap;html=1;" value="簽發伺服器憑證&lt;div&gt;&amp;nbsp;(1-2年效期)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-13" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-16" source="QNVvN-iR-K0-6vGK9Hkz-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QNVvN-iR-K0-6vGK9Hkz-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-8" parent="QNVvN-iR-K0-6vGK9Hkz-16" style="rounded=1;whiteSpace=wrap;html=1;" value="部署憑證至伺服器" vertex="1">
+          <mxGeometry height="60" width="120" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-9" parent="QNVvN-iR-K0-6vGK9Hkz-16" style="rounded=1;whiteSpace=wrap;html=1;" value="建置並啟動後端服務&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;(Docker, Mosquitto, DBs, API)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-46" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="510" width="493.5" x="440" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-18" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-46" source="QNVvN-iR-K0-6vGK9Hkz-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QNVvN-iR-K0-6vGK9Hkz-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-20" parent="QNVvN-iR-K0-6vGK9Hkz-46" style="rounded=1;whiteSpace=wrap;html=1;" value="客戶端 App/網站" vertex="1">
+          <mxGeometry height="60" width="120" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-21" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-46" source="QNVvN-iR-K0-6vGK9Hkz-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QNVvN-iR-K0-6vGK9Hkz-27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-22" parent="QNVvN-iR-K0-6vGK9Hkz-46" style="rounded=1;whiteSpace=wrap;html=1;" value="註冊/登入" vertex="1">
+          <mxGeometry height="60" width="120" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-23" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-46" source="QNVvN-iR-K0-6vGK9Hkz-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QNVvN-iR-K0-6vGK9Hkz-25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-24" parent="QNVvN-iR-K0-6vGK9Hkz-46" style="rounded=1;whiteSpace=wrap;html=1;" value="後端 API 伺服器" vertex="1">
+          <mxGeometry height="60" width="120" x="150" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-42" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-46" source="QNVvN-iR-K0-6vGK9Hkz-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-25" parent="QNVvN-iR-K0-6vGK9Hkz-46" style="rounded=1;whiteSpace=wrap;html=1;" value="驗證並綁定設備&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;(更新DB, is_active=TRUE)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-26" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-46" source="QNVvN-iR-K0-6vGK9Hkz-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QNVvN-iR-K0-6vGK9Hkz-29" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-32" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-46" source="QNVvN-iR-K0-6vGK9Hkz-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QNVvN-iR-K0-6vGK9Hkz-25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-27" parent="QNVvN-iR-K0-6vGK9Hkz-46" style="rounded=1;whiteSpace=wrap;html=1;" value="掃描序號並綁定" vertex="1">
+          <mxGeometry height="60" width="120" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-41" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-46" source="QNVvN-iR-K0-6vGK9Hkz-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="QNVvN-iR-K0-6vGK9Hkz-40">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="480" />
+            </Array>
+            <mxPoint x="90" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-29" parent="QNVvN-iR-K0-6vGK9Hkz-46" style="rounded=1;whiteSpace=wrap;html=1;" value="綁定成功&lt;div&gt;可查詢數據&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-35" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-46" source="QNVvN-iR-K0-6vGK9Hkz-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QNVvN-iR-K0-6vGK9Hkz-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-33" parent="QNVvN-iR-K0-6vGK9Hkz-46" style="rounded=1;whiteSpace=wrap;html=1;" value="電池設備 (韌體)" vertex="1">
+          <mxGeometry height="60" width="120" x="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-37" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-46" source="QNVvN-iR-K0-6vGK9Hkz-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="QNVvN-iR-K0-6vGK9Hkz-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-34" parent="QNVvN-iR-K0-6vGK9Hkz-46" style="rounded=1;whiteSpace=wrap;html=1;" value="開機連網" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-43" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-46" source="QNVvN-iR-K0-6vGK9Hkz-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QNVvN-iR-K0-6vGK9Hkz-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="340" />
+              <mxPoint x="286" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-44" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-46" source="QNVvN-iR-K0-6vGK9Hkz-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QNVvN-iR-K0-6vGK9Hkz-39">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="340" />
+              <mxPoint x="434" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-36" parent="QNVvN-iR-K0-6vGK9Hkz-46" style="rounded=1;whiteSpace=wrap;html=1;" value="定期輪詢狀態" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-38" parent="QNVvN-iR-K0-6vGK9Hkz-46" style="rounded=1;whiteSpace=wrap;html=1;" value="停止輪詢&lt;div&gt;(回傳 inactive)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="226.5" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-45" edge="1" parent="QNVvN-iR-K0-6vGK9Hkz-46" source="QNVvN-iR-K0-6vGK9Hkz-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="QNVvN-iR-K0-6vGK9Hkz-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-39" parent="QNVvN-iR-K0-6vGK9Hkz-46" style="rounded=1;whiteSpace=wrap;html=1;" value="MQTTS 連線&lt;div&gt;(回傳 active)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="373.5" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="QNVvN-iR-K0-6vGK9Hkz-40" parent="QNVvN-iR-K0-6vGK9Hkz-46" style="rounded=1;whiteSpace=wrap;html=1;" value="開始上傳數據" vertex="1">
+          <mxGeometry height="60" width="120" x="373.5" y="450" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
