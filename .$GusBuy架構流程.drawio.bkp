@@ -1,0 +1,219 @@
+<mxfile host="Electron">
+  <diagram name="第 1 页" id="s-pWX_-CT4HHAT8Wtlvl">
+    <mxGraphModel dx="1571" dy="972" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-87" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="560" width="660" x="940" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="720" width="870" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="140" width="680" x="30" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-6" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="新用戶註冊" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="註冊與身分驗證" vertex="1">
+          <mxGeometry height="30" width="120" x="30" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="舊有方式 內部啟用" vertex="1">
+          <mxGeometry height="30" width="60" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-8" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="登錄到伺服器&lt;div&gt;但未啟用&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-10" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="客戶通知&lt;div&gt;有註冊帳號&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="啟用帳號" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-30" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#60a917;strokeColor=#2D7600;" target="nh5CfoyYI9mn82BdhE4V-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="160" width="680" x="30" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-12" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="新用戶註冊" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="新方式&lt;div&gt;SMS驗證&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="40" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-15" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="登錄到伺服器&lt;div&gt;但未啟用&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;並&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;傳送認證簡訊&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="230" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-17" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="客戶用&lt;div&gt;手機認證&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="啟用帳號" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-31" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#60a917;strokeColor=#2D7600;" target="nh5CfoyYI9mn82BdhE4V-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="160" width="680" x="30" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-21" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="新用戶註冊" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="新方式&lt;div&gt;SMTP驗證&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="40" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-24" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="登錄到伺服器&lt;div&gt;但未啟用&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;並&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;傳送認證信&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="230" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-26" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="客戶用&lt;div&gt;信件認證&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="啟用帳號" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;strokeColor=#2D7600;" value="SMS 與 SMTP 需&lt;div&gt;額外Survey&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="760" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-43" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" target="nh5CfoyYI9mn82BdhE4V-42" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="140" width="680" x="30" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-33" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-37" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="新用戶註冊" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="新方式&lt;div&gt;Appwrite&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="40" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-36" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-39" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="連結Email" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-38" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-40" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="客戶用JWT&lt;div&gt;驗證登錄&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="啟用帳號" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;strokeColor=#2D7600;" value="Appwrite 需額外Survey" vertex="1">
+          <mxGeometry height="60" width="120" x="760" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="下單流程" vertex="1">
+          <mxGeometry height="30" width="120" x="950" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-90" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-89" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-88" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="客戶將商品加入購物車" vertex="1">
+          <mxGeometry height="60" width="120" x="1084" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-92" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-91" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-89" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="在購物車頁&lt;div&gt;進行結帳&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1084" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-94" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-93" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-95" connectable="0" parent="nh5CfoyYI9mn82BdhE4V-94" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="否" vertex="1">
+          <mxGeometry relative="1" x="0.0012" y="1" as="geometry">
+            <mxPoint x="34" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-97" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="nh5CfoyYI9mn82BdhE4V-96" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-91" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=17;rounded=1;" value="金額是否&lt;div&gt;大於10萬&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="115" x="1086.5" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-100" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="nh5CfoyYI9mn82BdhE4V-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-104" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1360" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-93" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="直接進行&lt;div&gt;線上付款&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="950" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-101" edge="1" parent="1" source="nh5CfoyYI9mn82BdhE4V-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.543;exitY=0.99;exitDx=0;exitDy=0;exitPerimeter=0;" target="nh5CfoyYI9mn82BdhE4V-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-96" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="將資訊傳給業務進行接洽" vertex="1">
+          <mxGeometry height="60" width="120" x="1204" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-98" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="是" vertex="1">
+          <mxGeometry x="1089" y="340" as="geometry">
+            <mxPoint x="140" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-99" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="商品數量&lt;div&gt;自動減一&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1081.5" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-105" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#2D7600;" value="&lt;span style=&quot;font-size: 17px;&quot;&gt;需釐清項目&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="230" x="1360" y="350" as="geometry">
+            <mxRectangle height="30" width="130" x="1390" y="510" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-106" parent="nh5CfoyYI9mn82BdhE4V-105" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=17;" value="&lt;span style=&quot;text-align: center;&quot;&gt;電子發票開立方式&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="230" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-107" parent="nh5CfoyYI9mn82BdhE4V-105" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=17;" value="付款API使用方式" vertex="1">
+          <mxGeometry height="30" width="230" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-108" parent="nh5CfoyYI9mn82BdhE4V-105" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=17;" value="線上付款是否需要業務接洽" vertex="1">
+          <mxGeometry height="30" width="230" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-111" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="560" width="660" x="940" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-112" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="產品上架流程" vertex="1">
+          <mxGeometry height="30" width="120" x="950" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="nh5CfoyYI9mn82BdhE4V-114" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="客戶將商品加入購物車" vertex="1">
+          <mxGeometry height="60" width="120" x="950" y="650" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
